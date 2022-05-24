@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Card from "../components/Card";
 import Layout from "../components/Layout";
 
 const Home: NextPage = () => {
@@ -23,64 +24,28 @@ const Home: NextPage = () => {
           <h2 className="text-xl font-mono text-red-400">
             michee.projects.list()
           </h2>
-          <div className="p-3 bg-slate-300 drop-shadow-sm rounded-sm transition-all duration-200 hover:-translate-y-4">
-            <h3 className="font-bold">Chang et Robert</h3>
-            <p>
-              Chang and Robert algorithm implementation in python. The algorithm
-              elects a single node in a distributed system environment.
-            </p>
-            <a
-              href="https://github.com/yoshua70/ChangEtRobert.git"
-              target="_blank"
-              className="underline"
-              rel="noopener noreferrer"
-            >
-              See on Github.
-            </a>
-          </div>
-          <div className="bg-slate-300 p-3 drop-shadow-sm rounded-sm transition-all duration-200 hover:-translate-y-4">
-            <h3 className="font-bold">API avaxnews</h3>
-            <p>
-              Webscrapping API for the new site{" "}
-              <a href="https://avaxnews.com">avaxnews</a>. Built with Google
-              Puppeteer.
-            </p>
-            <a
-              href="https://github.com/yoshua70/avaxnewsapi.git"
-              target="_blank"
-              className="underline"
-              rel="noopener noreferrer"
-            >
-              See on Github.
-            </a>
-          </div>
-          <div className="bg-slate-300 p-3 drop-shadow-sm rounded-sm transition-all duration-200 hover:-translate-y-4">
-            <h3 className="font-bold">SAK Food</h3>
-            <p>
-              E-commerce website built with Wordpress and WooCommerce for a bio
-              grocery brand.
-            </p>
-            <a
-              href="https://sak-food.com/"
-              target="_blank"
-              className="underline"
-              rel="noopener noreferrer"
-            >
-              Visit.
-            </a>
-          </div>
-          <div className="bg-slate-300 p-3 drop-shadow-sm rounded-sm transition-all duration-200 hover:-translate-y-4">
-            <h3 className="font-bold">Akuna Lab</h3>
-            <p>Website for the INP-HB Fab-lab Akuna. Built with Nextjs.</p>
-            <a
-              href="https://akunalab.com/"
-              target="_blank"
-              className="underline"
-              rel="noopener noreferrer"
-            >
-              Visit.
-            </a>
-          </div>
+          <Card
+            title="Chang et Robert"
+            description="Chang and Robert algorithm implementation in python. The algorithm
+              elects a single node in a distributed system environment."
+            link="https://github.com/yoshua70/ChangEtRobert.git"
+          />
+          <Card
+            title="API avaxnews"
+            description="Webscrapping API for the new site avaxnews.com. Built with Google Puppeteer."
+            link="https://github.com/yoshua70/avaxnewsapi.git"
+          />
+          <Card
+            title="SAK Food"
+            description="E-commerce website built with Wordpress and WooCommerce for a bio
+            grocery brand."
+            link="https://sak-food.com/"
+          />
+          <Card
+            title="Akuna Lab"
+            description="Website for the INP-HB Fab-lab Akuna. Built with Nextjs."
+            link="https://akunalab.com/"
+          />
           <a href="#">More &#8594;</a>
         </div>
         <div>
