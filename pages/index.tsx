@@ -12,7 +12,9 @@ const Home: NextPage = () => {
       </Head>
       <div className="flex flex-col gap-8">
         <div className="flex flex-col py-20">
-          <h1 className="text-2xl font-mono">I build web applications.</h1>
+          <h1 className="text-2xl font-mono bg-red-400 max-w-fit">
+            I build web applications.
+          </h1>
           <h2 className="text-xl text-slate-500">
             michée allidjinou - IT Engineer
           </h2>
@@ -24,34 +26,58 @@ const Home: NextPage = () => {
           <div className="p-3 bg-slate-300 drop-shadow-sm rounded-sm transition-all duration-200 hover:-translate-y-4">
             <h3 className="font-bold">Chang et Robert</h3>
             <p>
-              Implémentation de l'algorithme de Chang et Robert en python.
-              L'algorithme permet d'élire un processus dans un système
-              distribué.
+              Chang and Robert algorithm implementation in python. The algorithm
+              elects a single node in a distributed system environment.
             </p>
             <a
               href="https://github.com/yoshua70/ChangEtRobert.git"
               target="_blank"
               className="underline"
             >
-              Voir sur Github.
+              See on Github.
             </a>
           </div>
           <div className="bg-slate-300 p-3 drop-shadow-sm rounded-sm transition-all duration-200 hover:-translate-y-4">
             <h3 className="font-bold">API avaxnews</h3>
             <p>
-              API de webscrapping pour le site{" "}
-              <a href="https://avaxnews.com">avaxnews</a>. Développé avec
-              express et Goolge Puppeteer.
+              Webscrapping API for the new site{" "}
+              <a href="https://avaxnews.com">avaxnews</a>. Built with Google
+              Puppeteer.
             </p>
             <a
               href="https://github.com/yoshua70/avaxnewsapi.git"
               target="_blank"
               className="underline"
             >
-              Voir sur Github.
+              See on Github.
             </a>
           </div>
-          <a href="#">Plus &#8594;</a>
+          <div className="bg-slate-300 p-3 drop-shadow-sm rounded-sm transition-all duration-200 hover:-translate-y-4">
+            <h3 className="font-bold">SAK Food</h3>
+            <p>
+              E-commerce website built with Wordpress and WooCommerce for a bio
+              grocery brand.
+            </p>
+            <a
+              href="https://sak-food.com/"
+              target="_blank"
+              className="underline"
+            >
+              Visit.
+            </a>
+          </div>
+          <div className="bg-slate-300 p-3 drop-shadow-sm rounded-sm transition-all duration-200 hover:-translate-y-4">
+            <h3 className="font-bold">Akuna Lab</h3>
+            <p>Website for the INP-HB Fab-lab Akuna. Built with Nextjs.</p>
+            <a
+              href="https://akunalab.com/"
+              target="_blank"
+              className="underline"
+            >
+              Visit.
+            </a>
+          </div>
+          <a href="#">More &#8594;</a>
         </div>
         <div>
           <h2 className="text-xl font-mono text-red-400">michee.location()</h2>
@@ -62,13 +88,17 @@ const Home: NextPage = () => {
             <li className="px-4 py-2 transition-all duration-200 hover:bg-red-300 w-fit">
               <a href="https://linkedin.com/in/micheeallidjinou"> LinkedIn</a>
             </li>
+            <li className="px-4 py-2 transition-all duration-200 hover:bg-red-300 w-fit">
+              <a href="https://twitter.com/mawu_io"> Twitter</a>
+            </li>
           </ul>
         </div>
         <div>
           <h2 className="text-xl font-mono text-red-400">michee.about</h2>
-          <p className="text-slate-500 w-full md:w-1/2">
-            Passionate about computer science and programming. Right now I'm
-            focused on learning react and building apps with Nextjs.
+          <p className="text-slate-500 w-full md:w-1/2 my-4">
+            Passionate about computer science and programming. Right now{" "}
+            {`I'm `}
+            learning react and building apps with Nextjs and supabase.
           </p>
         </div>
       </div>
