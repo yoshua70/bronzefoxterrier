@@ -33,6 +33,7 @@ const Home: NextPage = () => {
               href="https://github.com/yoshua70/ChangEtRobert.git"
               target="_blank"
               className="underline"
+              rel="noopener noreferrer"
             >
               See on Github.
             </a>
@@ -48,6 +49,7 @@ const Home: NextPage = () => {
               href="https://github.com/yoshua70/avaxnewsapi.git"
               target="_blank"
               className="underline"
+              rel="noopener noreferrer"
             >
               See on Github.
             </a>
@@ -62,6 +64,7 @@ const Home: NextPage = () => {
               href="https://sak-food.com/"
               target="_blank"
               className="underline"
+              rel="noopener noreferrer"
             >
               Visit.
             </a>
@@ -73,6 +76,7 @@ const Home: NextPage = () => {
               href="https://akunalab.com/"
               target="_blank"
               className="underline"
+              rel="noopener noreferrer"
             >
               Visit.
             </a>
@@ -83,13 +87,33 @@ const Home: NextPage = () => {
           <h2 className="text-xl font-mono text-red-400">michee.location()</h2>
           <ul>
             <li className="px-4 py-2 transition-all duration-200 hover:bg-red-300 w-fit">
-              <a href="https://github.com/yoshua70">Github</a>
+              <a
+                href="https://github.com/yoshua70"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
             </li>
             <li className="px-4 py-2 transition-all duration-200 hover:bg-red-300 w-fit">
-              <a href="https://linkedin.com/in/micheeallidjinou"> LinkedIn</a>
+              <a
+                href="https://linkedin.com/in/micheeallidjinou"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                LinkedIn
+              </a>
             </li>
             <li className="px-4 py-2 transition-all duration-200 hover:bg-red-300 w-fit">
-              <a href="https://twitter.com/mawu_io"> Twitter</a>
+              <a
+                href="https://twitter.com/mawu_io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                Twitter
+              </a>
             </li>
           </ul>
         </div>
