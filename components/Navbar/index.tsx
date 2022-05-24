@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ThemeButton } from "../ThemeButton";
 
 const Navbar = () => {
   return (
@@ -16,6 +17,7 @@ const Navbar = () => {
         <Link href="#">
           <a className="transition-all duration-200 hover:bg-red-300">about</a>
         </Link>
+        <ThemeButton />
       </div>
     </nav>
   );
